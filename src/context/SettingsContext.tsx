@@ -3,14 +3,16 @@ import {
   useContext,
   useMemo,
   useEffect,
-  PropsWithChildren,
 } from "react";
+import type { PropsWithChildren } from "react";
+
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import {
   DEFAULT_SETTINGS,
   SETTINGS_STORAGE_KEY,
 } from "../utils/defaultSettings";
-import { Settings, FontSize } from "../types/settings";
+import type { Settings, FontSize } from "../types/settings";
+
 
 interface Ctx {
   settings: Settings;
